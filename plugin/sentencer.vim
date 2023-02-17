@@ -7,7 +7,7 @@ function! s:setopt(opt, val) abort
   let g:[a:opt] = get(g:, a:opt, a:val)
 endfunction
 
-call s:setopt('sentencer_punctuation', '.!?')
+call s:setopt('sentencer_punctuation', '.!,;?')
 call s:setopt('sentencer_ignore',
   \ ['\<i.e', '\<e.g', '\<vs', '\<Dr', '\<Mr', '\<Mrs', '\<Ms'])
 call s:setopt('sentencer_textwidth', 0)
